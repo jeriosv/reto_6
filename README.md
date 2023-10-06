@@ -80,4 +80,34 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
   El nombre es un acrónimo recursivo que se puede interpretar como Pip Instalador de Paquetes o Pip Instalador Python. Este es un sistema de gestión de paquetes 
   sencillo utilizado para la instalación y administración de paquetes que pueden ser encontrados en el Python Package Index (PyPi)
 
-10. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+10. Hacer un listado de módulos populares para python que se puedan instalar como pip y consultar cómo instalarlos.
+
+    Uno de los módulos más populares para python son:
+     - TensorFlow
+     - Scikit-Learn
+     - Numpy
+     - Keras
+     - PyTorch
+     - LightGBM
+     - Eli5
+     - SciPy
+     - Theano
+     - Pandas
+    Y algunos módulos que vienen "built-in" dentro del instalador de python son:
+     - math
+     - collections
+     - datetime
+     - random
+     - sys
+     - logging
+     - time
+     - os
+    Para instalar un paquete desde PyPI utiliza:
+      pip install paquete
+     En donde paquete es el nombre de un módulo, librería, script o framework que se encuentre en https://pypi.python.org/pypi.
+     Por ejemplo en windows:
+      > C:\PythonXY\scripts\pip install django
+     pip es un módulo de Python, por lo que si no se encuentra en la carpeta scripts también puede utilizarse:
+      > C:\PythonXY\python -m pip install django
+
+
