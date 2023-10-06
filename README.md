@@ -76,4 +76,8 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 9. Consultar qué es y cómo funciona pip en python.
 
+  PIP es el administrador de paquetes Python. Se puede utilizar para instalar, actualizar y eliminar paquetes escritos en el lenguaje de programación Python.
+  El nombre es un acrónimo recursivo que se puede interpretar como Pip Instalador de Paquetes o Pip Instalador Python. Este es un sistema de gestión de paquetes 
+  sencillo utilizado para la instalación y administración de paquetes que pueden ser encontrados en el Python Package Index (PyPi)
+
 10. Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
