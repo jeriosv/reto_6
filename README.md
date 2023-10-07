@@ -93,6 +93,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
      - SciPy
      - Theano
      - Pandas
+    
     Y algunos módulos que vienen "built-in" dentro del instalador de python son:
      - math
      - collections
@@ -102,6 +103,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
      - logging
      - time
      - os
+    
     Para instalar un paquete desde PyPI utiliza:
       pip install paquete
      En donde paquete es el nombre de un módulo, librería, script o framework que se encuentre en https://pypi.python.org/pypi.
