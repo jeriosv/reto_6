@@ -2,32 +2,32 @@ import math
 import random
 import statistics as stats
 
-def promedio(a,b,c,d,e): #cálculo de promedio
+def promedio(a,b,c,d,e): 
     return((a+b+c+d+e)/5)
 
-def mediana(a,b,c,d,e): #cálculo de mediana
+def mediana(a,b,c,d,e): 
     datos = [a,b,c,d,e]
     return (stats.mean(datos))
 
-def promediomultiplicativo(a,b,c,d,e): #cálculo de promedio multiplicativo
+def promedioMultiplicativo(a,b,c,d,e): 
     m=(a*b*c*d*e)
     return math.sqrt(m)
 
-def ordenascendente(a,b,c,d,e): #ordenamiento de números de forma ascendente
+def ordenAscendente(a,b,c,d,e): 
     lista = [a,b,c,d,e]
     lista.sort()
     return lista
 
-def ordenadescendente(a,b,c,d,e): #ordenamiento de números de forma descendente
+def ordenaDescendente(a,b,c,d,e): 
     listap = [a,b,c,d,e]
     listap.sort(reverse=True)
     return listap
                 
-def potencia(a,b,c,d,e): #potencia del máximo número elevado al menor número
+def potencia(a,b,c,d,e): 
     listapb = [a,b,c,d,e]
     return(max(listapb)**min(listapb))
 
-def raizcubicamenor(a,b,c,d,e): #raíz cúbica del menor número
+def raizCubicaMenor(a,b,c,d,e): 
     listapbp = [a,b,c,d,e]
     return((min(listapbp))**(1/3))
 
@@ -35,37 +35,36 @@ def main():
     continuar=8;
     try:
         while continuar==8:
-            print("Bienvenid@, ingresa 5 números");
+            print("Ingresa 5 números");
             print("");
-            a=float(input("Ingrese el valor de a "))
+            a=float(input("Ingrese el valor del primer "))
             print("");
-            b=float(input("Ingrese el valor de b "))
+            b=float(input("Ingrese el valor del segundo "))
             print("");
-            c=float(input("Ingrese el valor de c "))
+            c=float(input("Ingrese el valor del tercer "))
             print("");
-            d=float(input("Ingrese el valor de d "))
+            d=float(input("Ingrese el valor del cuarto "))
             print("");
-            e=float(input("Ingrese el valor de e "))
+            e=float(input("Ingrese el valor del quinto "))
             print("");
-            print("El promedio de sus números es",promedio(a,b,c,d,e));
+            print("El promedio de los 5 números es",promedio(a,b,c,d,e));
             print("");
-            print("La mediana de sus números es",mediana(a,b,c,d,e));
+            print("La mediana de los 5 números es",mediana(a,b,c,d,e));
             print("");
-            print("El promedio multiplicativo de sus números es",promediomultiplicativo(a,b,c,d,e));
+            print("El promedio multiplicativo de los 5 números es",promedioMultiplicativo(a,b,c,d,e));
             print("");
-            print("De menor a mayor, son",ordenascendente(a,b,c,d,e));
+            print("Ordenados de menor a mayor, son",ordenAscendente(a,b,c,d,e));
             print("");
-            print("De mayor a menor, son",ordenadescendente(a,b,c,d,e));
+            print("Ordenados de mayor a menor, son",ordenaDescendente(a,b,c,d,e));
             print("");
             print("La potencia del mayor número elevado al menor número es",potencia(a,b,c,d,e));
             print("");
-            print("La raíz cúbica del menor número es",raizcubicamenor(a,b,c,d,e));
+            print("La raíz cúbica del menor número es",raizCubicaMenor(a,b,c,d,e));
             print("");
-            continuar=int(input("¿Quiere seguir ejecutando el programa? 8 = SI, 9 = NO "))
+            continuar=int(input("¿Desea volver a hacerlo con otros 5 números? 8 = SI, 9 = NO "))
             print("");
             print("");
     except:
-        print("Error en los datos numéricos");
+        print("Error en los datos ingresados");
 
 main() 
-
