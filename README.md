@@ -41,13 +41,32 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 ![image](https://github.com/jeriosv/reto_6/assets/142249529/7d67351e-e091-4f29-9308-afe5aae20b16)
 
    - Una función matemática para calcular el área y el perimetro.
-     ```python
-     ```
+     
    - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r, a y b.
-      ```python
-     ```
+     
    - Revise como utilizar el valor de pi usando import math y math.pi
      ```python
+     import math
+
+     def perimetro(r:float, a:float, b:float) -> float:
+       rectangulo = 2 * b + 2 * a
+       circulo = 2 * math.pi * r
+       return rectangulo + 2 * circulo
+
+     def area(r:float, a:float, b:float) -> float:
+       rectangulo = a * b
+       circulo = math.pi * r**2
+       return rectangulo + 2 * circulo
+
+     if _name_ == '_main_':
+       r = float(input("Ingrese el valor del radio (en cm): "))
+       a = float(input("Ingrese la altura del rectángulo (en cm): "))
+       b = float(input("Ingrese la longitud del rectángulo (en cm): "))
+       per = perimetro(r, a, b)
+       ar = area(r, a, b)
+    
+     print("El perímetro de la figura es: " + str(per) + " cm.")
+     print("El área de la figura es: " + str(ar) + " cm².")
      ```
 
 3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
