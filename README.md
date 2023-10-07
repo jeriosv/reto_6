@@ -109,7 +109,9 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
      En donde paquete es el nombre de un módulo, librería, script o framework que se encuentre en https://pypi.python.org/pypi.
      Por ejemplo en windows:
       > C:\PythonXY\scripts\pip install django
+
      pip es un módulo de Python, por lo que si no se encuentra en la carpeta scripts también puede utilizarse:
+
       > C:\PythonXY\python -m pip install django
 
 
