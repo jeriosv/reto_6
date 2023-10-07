@@ -72,6 +72,21 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
    
     ```python
+    
+    def calcularCantidadCarneAves():
+      pesoGallinas = nGallinas * 6
+      pesoGallos = mGallos * 7
+      pesoPollitos = kPollitos * 1
+      pesoTotal = pesoGallinas + pesoGallos + pesoPollitos
+      return pesoTotal
+
+    if __name__ == '__main__':
+      nGallinas = int(input("Ingrese el número de gallinas: "))
+      mGallos = int(input("Ingrese el número de gallos: "))
+      kPollitos = int(input("Ingrese el número de pollitos: "))
+      cantidadCarne = calcularCantidadCarneAves()
+    
+    print("La cantidad de carne de aves es:", cantidadCarne, "kilos")
      ```
 
 4. Mi mamá me manda a comprar P panes a 300 cada uno, M bolsas de leche a 3300 cada una y H huevos a 350 cada uno. Hacer un programa que me diga las vueltas (o lo que quedo debiendo) cuando me da un billete de B pesos.
