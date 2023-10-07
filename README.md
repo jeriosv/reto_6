@@ -92,16 +92,62 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 4. Mi mamá me manda a comprar P panes a 300 cada uno, M bolsas de leche a 3300 cada una y H huevos a 350 cada uno. Hacer un programa que me diga las vueltas (o lo que quedo debiendo) cuando me da un billete de B pesos.
    
     ```python
+    def calcularVueltas(cantidadPanes, cantidadLeche, cantidadHuevos, montoPagado)-> int:
+
+      totalCompra = ((cantidadPanes * 300) + (cantidadLeche * 3300) + (cantidadHuevos * 350))
+
+      vueltas = montoPagado - totalCompra
+
+      if vueltas < 0:
+        return abs(vueltas)
+      else:
+        return vueltas
+
+    if __name__ == '__main__':
+      cantidadPanes = int(input("Ingresa el número de panes a comprar: "))
+      cantidadLeche = int(input("Ingresa el número de bolsas de leche a comprar: "))
+      cantidadHuevos = int(input("Ingresa el número de huevos a comprar: "))
+      montoPagado = int(input("Ingresa el monto que pagará: "))
+
+    vueltas = calcularVueltas(cantidadPanes, cantidadLeche, cantidadHuevos, montoPagado)
+    
+    if vueltas == 0:
+        print("No hay vueltas.")
+    elif vueltas < 0:
+        print("Lo siento, debe pagar un adicional de:", vueltas)
+    else:
+        print("Sus vueltas son:", vueltas)
      ```
 
 5. Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
    
     ```python
+    def calcularValorPrestamo(prestamo: float, tasaIinteres: float, meses: int) -> float:
+      interes = tasaInteres * prestamo / 100
+      return prestamo + meses * interes
+
+    if __name__ == '__main__':
+      prestamo = float(input("Ingrese el valor del préstamo en pesos: "))
+      tasaInteres = float(input("Ingrese la tasa de interés en porcentaje: "))
+      meses = int(input("Ingrese el número de meses para el préstamo: "))
+      valorPrestamo = calcularValorPrestamo(prestamo, tasaInteres, meses)
+    
+    print("El valor a pagar es de: " + str(valorPrestamo))
+
      ```
 
 6. El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
 
      ```python
+     def calcularContagios(contagiadosActuales: int, diasTranscurridos: int) -> int:
+       return contagiadosActuales * (2 ** diasTranscurridos)
+
+     if __name__ == '__main__':
+       contagiadosActuales = int(input("Ingrese el número de contagiados actuales: "))
+       diasTranscurridos = int(input("Ingrese el número de días transcurridos a partir de hoy: "))
+       totalContagios = calcularContagios(contagiadosActuales, diasTranscurridos)
+       print(f"El número total de personas contagiadas después de {diasTranscurridos} días es: {totalContagios}")
+
      ```
 
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
